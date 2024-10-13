@@ -14,13 +14,19 @@
         }
 
         header {
-            background-color: #006164;
+        background-image: url('images/headerbackground.png'); /* Change to your image path */
+        background-size: cover; /* Ensure the image covers the entire header */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Avoid repeating the image */
             color: white;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 10px 20px;
         }
+        nav {
+        margin-top: 30px; /* Move the navigation links down */
+    }
 
         .logo {
             height: 50px;
@@ -60,40 +66,38 @@
 
     <header>
         <div class="header-container">
-            <img src="images/logo.cgg.PNG" alt="Logo" class="logo">
+            <img src="images/LOGO.CGG.PNG" alt="Logo" class="logo" style="width: 140px; height: auto;">
 
-            <h1>Casual Golf Guys</h1>
+
+            <h1></h1>
         </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Gallery</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#index.html">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about.html">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     
 
     <main>
         <div class="content">
-            <h2>About My Golf Journey</h2>
-            <p>Welcome to my golf page! Here, I share my experiences, tips, and photos from my favorite rounds.</p>
+            <h2 style="font-size: 36px; font-family: 'Georgia', serif;">Casual Golf Guys</h2>
+            <p>Welcome to Casual Golf Guys – a space for golfers of all levels who love the game, no matter how often they play. Whether you’re squeezing in a quick round or planning epic golf getaways, we’ve got you covered. Explore cool courses, hidden gems, and must-play destinations. It's all about the love of golf, played your way – when you can, where you can! ⛳</p>
 
-            <h3>Photo Gallery</h3>
-            <div class="gallery">
-                <img src="images/round1.jpg" alt="Round 1">
-                <img src="images/round2.jpg" alt="Round 2">
-                <img src="images/round3.jpg" alt="Round 3">
-                <img src="images/round4.jpg" alt="Round 4">
+            
             </div>
 
+            
+
             <div class="modal" id="imageModal">
-                <img id="modalImage" src="" alt="Large View">
+                <img id="modalImage" src="" alt="">
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 My Golf Page. All rights reserved.</p>
+        <p>&copy; 2024, Casual Golf Guys </p>
     </footer>
 
     <script>
