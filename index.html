@@ -28,9 +28,13 @@
         margin-top: 30px; /* Move the navigation links down */
     }
 
-        .logo {
-            height: 50px;
-        }
+    .logo {
+    max-width: 100%;   /* Ensures it fits within mobile screens */
+    height: auto;      /* Maintains aspect ratio */
+    display: block;    /* Prevents inline display issues */
+    margin: 0 auto;    /* Centers the logo */
+}
+
 
         nav a {
             color: white;
@@ -43,14 +47,16 @@
         }
 
         footer {
-            background-color: #006400;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+    background-color: #006455;
+    color: white;
+    text-align: center;
+    padding: 5px;   /* Reduced padding to make the footer thinner */
+    font-size: 14px;  /* Adjust the font size (optional) */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
 
         .content {
             max-width: 800px;
