@@ -14,7 +14,10 @@
         }
 
         header {
-            background-color: #006164;
+            background-image: url('images/headerbackground.png'); /* Change to your image path */
+        background-size: cover; /* Ensure the image covers the entire header */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Avoid repeating the image */
             color: white;
             display: flex;
             align-items: center;
@@ -32,10 +35,6 @@
             text-decoration: none;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
         .content {
             max-width: 800px;
             margin: auto;
@@ -45,45 +44,48 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 20px;
         }
-
-        footer {
-            background-color: #006455;
-            color: white;
-            text-align: center;
-            padding: 5px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            font-size: 14px;
-        }
     </style>
 </head>
 <body>
 
     <header>
         <div class="header-container">
-            <img src="images/logo.cgg.png" alt="Logo" class="logo" style="width: 150px; height: auto;">
-            <h1>Casual Golf Guys</h1>
+            <img src="images/logo.cgg.png" alt="Logo" class="logo" style="width: 140px; height: auto;">
+            <h1></h1>
         </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="#gallery">Gallery</a>
-            <a href="about.html">About</a>
+            <a href="./about.html">About</a> <!-- Use ./ to specify the correct path -->
             <a href="#">Contact</a>
         </nav>
+        
     </header>
 
     <main>
         <div class="content">
             <h2>About Us</h2>
-            <p>
-                We are a group of friends based in <strong>Ann Arbor, MI</strong> who share a passion for golf. 
-                Like many, we juggle demanding jobs, family commitments, and everything in between. 
-                That’s why we created <strong>Casual Golf Guys</strong> – a space for golfers in the greater Ann Arbor area 
-                to connect, find playing partners, and build lasting friendships.
+            <p>We are a group of friends based in <strong>Ann Arbor, MI</strong> who share a passion for golf. 
+               Like many, we juggle demanding jobs, family commitments, and everything in between. 
+               That’s why we created <strong>Casual Golf Guys</strong> – a space for golfers in the greater 
+               Ann Arbor area to connect, find playing partners, and build lasting friendships.
             </p>
 
-            <p>
-                In the <strong>spring of 2024</strong>, we formed Casual Golf Guys to support and grow the 
-                <strong>Ann Arbor Casual Golf Group (AACGG)</strong>, a local community focused on fostering 
-     
+            <p>Founded in the <strong>spring of 2024</strong>, our mission is simple: foster meaningful 
+               connections on the course that lead to great golf memories and even better networking 
+               opportunities – all while keeping things casual!
+            </p>
+
+            <p>Since launching, we’ve hosted two incredible events:</p>
+            <ul>
+                <li>The First Annual AACGG Summer Invitational</li>
+                <li>The First Annual AACGG Fall Classic Scramble</li>
+            </ul>
+
+            <p>We’re excited about the future and look forward to adding more events, welcoming new members, 
+               and continuing to create unforgettable golf moments together!</p>
+        </div>
+    </main>
+
+</body>
+</html>
